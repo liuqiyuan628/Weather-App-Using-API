@@ -3,7 +3,7 @@ var searchBar = document.querySelector(".search-bar")
 
 let weather = {
 
-    apiKey: "4be3e62ff06896e29bf327c160b23e92",
+    apiKey: "",
 
     fetchWeather: function(city){
         fetch(
