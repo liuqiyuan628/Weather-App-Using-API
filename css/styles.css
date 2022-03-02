@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500&display=swap');
+body{
+    font-family: 'Fredoka', sans-serif;
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #222;
+    background-image: url('https://source.unsplash.com/1600x900/?landscape');
+    font-size: 120%;
+    background-size: cover;
+
+}
+
+
+h2.temp{
+    margin:0;
+}
+
+.api-container {
+    background: #000000d0;
+    color: aliceblue;
+    padding: 2em;
+    border-radius: 30px;
+    max-width: 420px;
+    width: 100%;
+    margin: 1em;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+button:hover{
+    background-color:rgb(138, 138, 138);
+cursor: pointer;
+transition: ease-in-out 0.4s;
+}
+
+button {
+    margin: 0.5em;
+    border-radius: 50%;
+    border: none;
+    height: 2.5em;
+    width: 2.5em;
+    background-color:rgb(92, 92, 92);
+    color: aliceblue;
+
+}
+
+svg {
+    height: 1.3em;
+    width: 1.3em;
+}
+
+input.search-bar {
+    border: none;
+    outline: none;
+    padding: 0.5em 1em;
+    border-radius: 15px;
+    background-color:rgb(92, 92, 92);
+    font-family: inherit;
+    color: aliceblue;
+    width: calc(100% - 70px);
+}
+
+.description {
+    text-transform: capitalize;
+    margin-left: 8px;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+.weather.loading{
+visibility: hidden;
+max-height: 20px;
+position: relative;
+}
+
+.weather.loading::after{
+visibility: visible;
+content: "Loading......";
+color: white;
+position: absolute;
+top: 0;
+}
+
+.humidity,.wind,.feels-like{
+    font-weight: 300;
+    font-size: 0.75em;
+    letter-spacing: 0.3px;
+    margin-bottom: 4px;
+}
+
+
+
+footer p{
+    color: aliceblue;
+    font-weight: 300;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    font-size: 0.6em;
+    text-shadow:1px 1px #222;
+    opacity: 50%;
+}
+
+a:link {
+    text-decoration: none;
+    color: white;
+  }
+
+  a:visited {
+    text-decoration: none;
+    color: white;
+
+  }
+  
+  a:hover {
+    text-decoration: underline;
+    color: white;
+
+  }
+  
+  a:active {
+    text-decoration: underline;
+    color: white;
+
+  }
